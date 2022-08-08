@@ -10,56 +10,46 @@
     <body> 
         <h1>Calculator</h1>
         <div class = "calculator">
-            <div class = "input">
-                7
-            </div>
+            <p style="color: white" id="result"> </p>
           <hr></hr>
           <div class = "components">
           <div class = "ac">
-            <button style = "background-color: #D4D4D2 ; color: black;" id = "AC"><b>AC</b></button>
+            <button onclick="clearDisplay()" style = "background-color: #D4D4D2 ; color: black;" id = "AC"><b>AC</b></button>
             <button style = "background-color: #D4D4D2 ; color: black" id = "positive-negative"><b>+/-</b></button>
             <button style = "background-color: #D4D4D2 ; color: black" id = "percentaje"><b>%</b></button>
-            <button style = "background-color: #FF9500 ;" id = "impartire"><b>÷</b></button>
+            <button onclick="insert(':')" style = "background-color: #FF9500 ;" id = "impartire"><b>÷</b></button>
           </div>
             <div class = "firstline">
                 <div class = "row1">
-
-                    <button style = "background-color: #505050 ; color: white;" id = "seven"><b>7</b></button>
-                    <button style = "background-color: #505050 ; color: white;"id = "eight"><b>8</b></button>
-                    <button style = "background-color: #505050 ; color: white;"id = "nine"><b>9</b></button>
-                    <button style = "background-color: #ff9500 ;"id = "inmultire"><b>x</b></button>
-
-                    <button onclick="buttonPressed()" id = "nine">9</button>
-                    <button id = "eight">8</button>
-                    <button id = "seven">7</button>
-                    <button id = "plus">+</button>
-                    <button id = "inmultire">*</button>
-
+                    <button onclick="insert('7')" style = "background-color: #505050 ; color: white;" id = "seven"><b>7</b></button>
+                    <button onclick="insert('8')" style = "background-color: #505050 ; color: white;"id = "eight"><b>8</b></button>
+                    <button onclick="insert('9')" style = "background-color: #505050 ; color: white;"id = "nine"><b>9</b></button>
+                    <button onclick="insert('x')" style = "background-color: #ff9500 ;"id = "inmultire"><b>x</b></button>
                 </div>
             </div>
             
             <div class = "secondline">
                 <div class = "row2">
-                    <button style = "background-color: #505050 ; color: white;" id = "four"><b>4</b></button>
-                    <button style = "background-color: #505050 ; color: white;"id = "five"><b>5</b></button>
-                    <button style = "background-color: #505050 ; color: white;" id = "six"><b>6</b></button>
-                    <button style = "background-color: #FF9500 ;" id = "minus"><b>-</b></button>
+                    <button onclick="insert('4')" style = "background-color: #505050 ; color: white;" id = "four"><b>4</b></button>
+                    <button onclick="insert('5')" style = "background-color: #505050 ; color: white;"id = "five"><b>5</b></button>
+                    <button onclick="insert('6')" style = "background-color: #505050 ; color: white;" id = "six"><b>6</b></button>
+                    <button onclick="insert('-')" style = "background-color: #FF9500 ;" id = "minus"><b>-</b></button>
                 </div>
             </div>
             
             <div class = "thirdline">
                 <div class = "row3">
-                    <button style = "background-color: #505050 ; color: white;" id = "one"><b>1</b></button>
-                    <button style = "background-color: #505050 ; color: white;"id = "two"><b>2</b></button>
-                    <button style = "background-color: #505050 ; color: white;"id = "three"><b>3</b></button>
-                    <button style = "background-color: #FF9500 ;" id = "plus"><b>+</b></button>
+                    <button onclick="insert('1')" style = "background-color: #505050 ; color: white;" id = "one"><b>1</b></button>
+                    <button onclick="insert('2')" style = "background-color: #505050 ; color: white;"id = "two"><b>2</b></button>
+                    <button onclick="insert('3')"style = "background-color: #505050 ; color: white;"id = "three"><b>3</b></button>
+                    <button onclick="insert('+')" style = "background-color: #FF9500 ;" id = "plus"><b>+</b></button>
                 </div>
             </div>
             <div class = "fourthline">
                 <div class = "row4">
                     <button style = "background-color: #505050 ; color: white;" id = "zero"><b>0</b></button>
                     <button style = "background-color: #505050 ; color: white;"id = "comma"><b>,</b></button>
-                    <button style = "background-color: #FF9500 ;" id = "equal"><b>=</b></button>
+                    <button  onclick="calculate()" style = "background-color: #FF9500 ;" id = "equal"><b>=</b></button>
                 </div>
             </div>
 
