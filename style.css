@@ -4,11 +4,17 @@ h1{
 }
 .calculator{
  width : 300px;
- height: 400px;
+ height: 450px;
  box-shadow: 0px 5px 25px #050505;
  margin: auto;
  padding: 20px;
- 
+ background-color: #1C1C1C;
+ border-radius: 7%;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 button{
@@ -21,7 +27,7 @@ button{
 }
 button:hover{
    
-    background-color: blueviolet;
+    background-color: rgb(228, 225, 218);
 }
 
 .firstline{
@@ -34,22 +40,30 @@ button:hover{
 .thirdline{
     margin-bottom: 10px;
 } 
+.ac{
+    margin-bottom: 10px;
+    color: grey;
+} 
 
 .input{
     height: 40px;
     font-size: 25px;
     padding: 20px;
+    color: white;
+    font-weight: bold ;
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
 }
 .components{
     margin: 20px;
     padding: auto;
-
+    font-family: 'Roboto', sans-serif;
 }
 
-#inmultire{
-    width: 100%;
-    border-radius: 50px;
-}
-#plus{
-    margin-bottom: 10px;
+
+#zero{
+  width: 48%;
+  border-radius: 50px;
+  text-align: left;
+  padding-left: 25px;
 }
